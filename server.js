@@ -5,11 +5,11 @@ app.set('view engine', 'pug');
 app.set('views','./views');
 
 app.get('/', function (req, res) {
-    res.render('template-1');
+    res.render('index');
 });
 
-app.get('/login', function (req, res) {
-    res.render('template-2');
+app.get('/logged', function (req, res) {
+    res.render('logged');
 });
 
 app.listen(3000);
